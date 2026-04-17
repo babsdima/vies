@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { Download } from "lucide-react";
 import { getProductBySlug } from "@/data/products";
 import { getCategoryBySlug } from "@/data/categories";
@@ -39,8 +40,14 @@ export default async function ProductPage({ params }: PageProps) {
       <div className="grid gap-10 lg:grid-cols-2">
         {/* Фото и характеристики */}
         <div>
-          <div className="flex h-72 items-center justify-center rounded-xl bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-800 dark:to-slate-700">
-            <span className="text-7xl text-slate-400">⚡</span>
+          <div className="relative h-72 overflow-hidden rounded-xl bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-800 dark:to-slate-700">
+            {product.image ? (
+              <Image src={product.image} alt={product.name} fill className="object-cover" />
+            ) : (
+              <div className="flex h-full items-center justify-center">
+                <span className="text-7xl text-slate-400">⚡</span>
+              </div>
+            )}
           </div>
 
           <div className="mt-6">

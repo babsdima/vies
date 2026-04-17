@@ -7,7 +7,7 @@ export const projects: Project[] = [
     client: "Крупный российский банк",
     description: "Проектирование и поставка системы бесперебойного питания для коммерческого дата-центра.",
     solution: "Модульный ИБП ESOLT M-500 (500 кВА) + литий-ионные АКБ ESOLT LBM-200 на автономию 30 минут.",
-    image: "/images/projects/datacenter.jpg",
+    image: "/images/products/battery-cabinets.png",
   },
   {
     id: "telecom-ural",
@@ -15,15 +15,15 @@ export const projects: Project[] = [
     client: "Федеральный телеком-оператор",
     description: "Поставка и монтаж ИБП для 24 узлов связи на Урале.",
     solution: "Стоечные ИБП ESOLT R3-40000 + свинцово-кислотные АКБ, централизованный мониторинг.",
-    image: "/images/projects/telecom.jpg",
+    image: "/images/products/ups-railway.png",
   },
   {
     id: "factory-spb",
     title: "Промышленная СБП для производства",
-    client: "Машиностроительный завод",
+    client: "Нефтегазовый объект",
     description: "Разработка и монтаж системы бесперебойного питания для критических производственных линий.",
     solution: "Промышленный ИБП агрегатного типа 200 кВА + LiFePO4 АКБ с автономией 2 часа.",
-    image: "/images/projects/factory.jpg",
+    image: "/images/products/ups-outdoor-oilfield.png",
   },
   {
     id: "hospital-nsk",
@@ -31,6 +31,6 @@ export const projects: Project[] = [
     client: "Многопрофильная клиника",
     description: "Полный цикл: аудит, проектирование, поставка, монтаж и ввод в эксплуатацию.",
     solution: "Моноблочный трансформаторный ИБП 60 кВА для операционных + резервный дизельный агрегат.",
-    image: "/images/projects/hospital.jpg",
+    image: "/images/products/ups-hospital.png",
   },
 ];

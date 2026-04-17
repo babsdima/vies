@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, Mail, MapPin } from "lucide-react";
 
 export default function Footer() {
@@ -7,7 +8,7 @@ export default function Footer() {
       <div className="container mx-auto px-4 py-12">
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div>
-            <p className="mb-3 text-xl font-bold text-primary">ESOLT</p>
+            <Image src="/images/logo/logo.png" alt="ESOLT" width={120} height={40} className="mb-3 h-10 w-auto" />
             <p className="text-sm text-muted-foreground">
               Сборщик и поставщик комплексных систем бесперебойного питания «под ключ»
             </p>
@@ -38,7 +39,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 shrink-0" />
-                <a href="tel:+74951234567" className="hover:text-foreground">+7 (495) 123-45-67</a>
+                <a href="tel:+79773479779" className="hover:text-foreground">+7 (977) 347-97-79</a>
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 shrink-0" />
@@ -46,7 +47,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0" />
-                <span>Москва, Россия</span>
+                <span>Москва, ул. Марии Полиановой, д. 9</span>
               </li>
             </ul>
           </div>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Product } from "@/types/catalog";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -13,8 +14,19 @@ export default function ProductCard({ product }: ProductCardProps) {
   return (
     <div className="group flex flex-col rounded-xl border bg-card shadow-sm transition-shadow hover:shadow-md">
       <Link href={`/catalog/${product.category}/${product.slug}`} className="flex-1">
-        <div className="flex h-40 items-center justify-center rounded-t-xl bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-800 dark:to-slate-700">
-          <span className="text-4xl text-slate-400">⚡</span>
+        <div className="relative h-44 overflow-hidden rounded-t-xl bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-800 dark:to-slate-700">
+          {product.image ? (
+            <Image
+              src={product.image}
+              alt={product.name}
+              fill
+              className="object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+          ) : (
+            <div className="flex h-full items-center justify-center">
+              <span className="text-4xl text-slate-400">⚡</span>
+            </div>
+          )}
         </div>
         <div className="p-4">
           <p className="font-semibold leading-snug group-hover:text-primary">{product.name}</p>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { projects } from "@/data/projects";
 
 export default function ProjectsSection() {
@@ -15,10 +16,21 @@ export default function ProjectsSection() {
           {projects.map((project) => (
             <div
               key={project.id}
-              className="overflow-hidden rounded-xl border bg-card shadow-sm"
+              className="group overflow-hidden rounded-xl border bg-card shadow-sm transition-shadow hover:shadow-md"
             >
-              <div className="flex h-32 items-center justify-center bg-gradient-to-br from-slate-700 to-slate-800">
-                <span className="text-3xl text-slate-400">⚡</span>
+              <div className="relative h-40 overflow-hidden bg-gradient-to-br from-slate-700 to-slate-800">
+                {project.image ? (
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                ) : (
+                  <div className="flex h-full items-center justify-center">
+                    <span className="text-3xl text-slate-400">⚡</span>
+                  </div>
+                )}
               </div>
               <div className="p-4">
                 <p className="text-xs font-medium uppercase tracking-wide text-primary">
