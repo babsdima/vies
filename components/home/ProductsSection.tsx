@@ -45,7 +45,7 @@ export default function ProductsSection() {
       <div className="container mx-auto px-4">
         <div className="mb-10 flex items-end justify-between">
           <div>
-            <h2 className="text-3xl font-bold tracking-tight">Продукция ESOLT</h2>
+            <h2 className="text-3xl font-bold tracking-tight">Продукция ВИЭС</h2>
             <p className="mt-2 text-muted-foreground">Полный спектр оборудования для систем бесперебойного питания</p>
           </div>
           <Button render={<Link href="/catalog" />} variant="outline" className="hidden sm:flex">

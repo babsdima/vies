@@ -3,7 +3,7 @@ import RequestForm from "@/components/shared/RequestForm";
 
 export const metadata: Metadata = {
   title: "Оставить заявку",
-  description: "Оставьте заявку на оборудование или услуги ESOLT — ответим в течение рабочего дня",
+  description: "Оставьте заявку на оборудование или услуги ВИЭС — ответим в течение рабочего дня",
 };
 
 export default function RequestPage() {

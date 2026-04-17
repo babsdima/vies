@@ -63,7 +63,7 @@ export default function BatteryCalculator() {
     const cabinetAh = 100;
     const cabinets = Math.ceil(ah / cabinetAh);
 
-    const config = `${cabinets} × ESOLT LBM-${cabinetAh} (${ah.toFixed(0)} А·ч при ${v} В)`;
+    const config = `${cabinets} × ВИЭС LBM-${cabinetAh} (${ah.toFixed(0)} А·ч при ${v} В)`;
 
     setResult({ capacityKwh: kwh, capacityAh: ah, cabinets, config });
     setShowForm(false);

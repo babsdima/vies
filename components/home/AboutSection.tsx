@@ -13,7 +13,7 @@ export default function AboutSection() {
     <section className="py-16 md:py-20">
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight">О компании ESOLT</h2>
+          <h2 className="text-3xl font-bold tracking-tight">О компании ВИЭС</h2>
           <p className="mt-3 text-muted-foreground">
             Мы — производитель и системный интегратор в сфере бесперебойного питания.
             Ведём проект от первого запроса до сдачи конечному заказчику.

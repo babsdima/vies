@@ -34,7 +34,7 @@ export default function HeroSection() {
             <p className="mb-8 text-lg leading-relaxed text-slate-300">
               Рассчитываем, проектируем, анализируем ТЗ заказчика, собираем из лучших комплектующих
               и интегрируем системы бесперебойного питания марки{" "}
-              <span className="font-semibold text-white">ESOLT</span> для критически важной инфраструктуры.
+              <span className="font-semibold text-white">ВИЭС</span> для критически важной инфраструктуры.
             </p>
 
             <div className="flex flex-wrap items-center gap-3">

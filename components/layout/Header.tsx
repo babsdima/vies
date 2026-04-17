@@ -21,7 +21,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-2">
-          <Image src="/images/logo/logo-nav.svg" alt="ESOLT" width={100} height={32} className="h-8 w-auto" />
+          <Image src="/images/logo/vies-logo.svg" alt="ВИЭС" width={140} height={36} className="h-9 w-auto" />
         </Link>
 
         <nav className="hidden items-center gap-6 md:flex">
